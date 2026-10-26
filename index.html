@@ -1,0 +1,392 @@
+  <!-- Logo -->
+  <a href="#" class="flex items-center gap-3 group">
+    <div class="w-10 h-10 rounded-full border border-[#D4AF37] flex items-center justify-center bg-gradient-to-br from-[#1A1613] to-[#2B231D] shadow-lg group-hover:border-[#E5C158] transition-all">
+      <i data-lucide="crown" class="w-5 h-5 text-[#D4AF37] group-hover:scale-110 transition-transform"></i>
+    </div>
+    <div class="flex flex-col">
+      <span class="text-xl font-serif tracking-[0.2em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#F5E6AD] via-[#D4AF37] to-[#AA7C11]">
+        САХАРА
+      </span>
+      <span class="text-[10px] tracking-widest text-amber-200/60 uppercase -mt-1">
+        Luxury Spa Club
+      </span>
+    </div>
+  </a>
+
+  <!-- Desktop Nav -->
+  <nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider text-amber-100/70">
+    <a href="#rooms" class="hover:text-[#D4AF37] transition-colors">Номера</a>
+    <a href="#services" class="hover:text-[#D4AF37] transition-colors">Услуги & SPA</a>
+    <a href="#gallery" class="hover:text-[#D4AF37] transition-colors">Галерея</a>
+    <a href="#contacts" class="hover:text-[#D4AF37] transition-colors">Контакты и Карта</a>
+  </nav>
+
+  <!-- Action Button -->
+  <div class="hidden lg:flex items-center gap-5">
+    <a href="tel:+78312501494" class="flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#E5C158] transition-colors font-medium">
+      <i data-lucide="phone" class="w-4 h-4 animate-pulse"></i>
+      <span>+7 (831) 250-14-94</span>
+      <span class="text-[10px] bg-[#2B231D] text-amber-300 px-1.5 py-0.5 rounded border border-[#D4AF37]/30">24/7</span>
+    </a>
+    <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#AA7C11] text-black font-semibold text-xs uppercase tracking-wider hover:opacity-95 shadow-lg shadow-[#D4AF37]/20 transition-all hover:scale-105">
+      Забронировать
+    </button>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button id="mobile-menu-btn" class="md:hidden text-[#D4AF37] p-2 focus:outline-none">
+    <i data-lucide="menu" class="w-6 h-6"></i>
+  </button>
+</div>
+
+<!-- Mobile Drawer -->
+<div id="mobile-menu" class="hidden md:hidden bg-[#120F0D]/95 border-b border-[#D4AF37]/30 backdrop-blur-xl px-6 py-6 flex flex-col gap-4 mt-3">
+  <a href="#rooms" class="mobile-link text-amber-100 hover:text-[#D4AF37] py-2 border-b border-amber-900/30">Номера и Сауны</a>
+  <a href="#services" class="mobile-link text-amber-100 hover:text-[#D4AF37] py-2 border-b border-amber-900/30">Услуги и Ритуалы</a>
+  <a href="#gallery" class="mobile-link text-amber-100 hover:text-[#D4AF37] py-2 border-b border-amber-900/30">Галерея</a>
+  <a href="#contacts" class="mobile-link text-amber-100 hover:text-[#D4AF37] py-2 border-b border-amber-900/30">Контакты и Карта</a>
+  
+  <div class="flex flex-col gap-3 pt-3">
+    <a href="tel:+78312501494" class="flex items-center justify-center gap-2 text-sm text-[#D4AF37] font-semibold py-2 bg-[#1E1915] rounded-lg border border-[#D4AF37]/30">
+      <i data-lucide="phone" class="w-4 h-4"></i> +7 (831) 250-14-94 (24/7)
+    </a>
+    <button onclick="openBookingModal()" class="w-full py-3 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#AA7C11] text-black font-bold uppercase tracking-wider text-xs">
+      Быстрое бронирование
+    </button>
+  </div>
+</div>
+
+
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center pt-12">
+  <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2B231D]/80 border border-[#D4AF37]/40 text-[#E5C158] text-xs font-medium tracking-widest uppercase mb-6 shadow-xl backdrop-blur-md">
+    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Premium Wellness & SPA Resort
+  </div>
+
+  <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFF2CC] via-[#D4AF37] to-[#C59B27] leading-tight tracking-wide mb-6">
+    Оазис роскоши и релаксации <br class="hidden sm:block" />
+    <span class="text-3xl sm:text-5xl lg:text-6xl text-amber-100 font-sans font-light italic">
+      в Нижнем Новгороде
+    </span>
+  </h1>
+
+  <p class="max-w-2xl text-lg sm:text-xl text-amber-100/80 font-light leading-relaxed mb-10">
+    Погрузитесь в атмосферу абсолютного комфорта: от высокогорного альпийского пара до императорских японских офуро и турецких хаммамов.
+  </p>
+
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md">
+    <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#AA7C11] text-black font-bold uppercase tracking-wider text-sm shadow-2xl shadow-[#D4AF37]/30 hover:shadow-[#D4AF37]/50 hover:scale-105 transition-all flex items-center justify-center gap-2">
+      <span>Забронировать номер</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+    </button>
+    <a href="#rooms" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#1A1613]/80 hover:bg-[#2B231D] text-amber-200 border border-[#D4AF37]/40 font-medium tracking-wider text-sm transition-all text-center backdrop-blur-md">
+      Исследовать сауны
+    </a>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-12 mt-16 pt-10 border-t border-[#D4AF37]/20 w-full max-w-4xl">
+    <div>
+      <div class="text-2xl sm:text-3xl font-serif text-[#D4AF37] font-bold">5</div>
+      <div class="text-xs text-amber-200/60 uppercase tracking-wider mt-1">Эксклюзивных номеров</div>
+    </div>
+    <div>
+      <div class="text-2xl sm:text-3xl font-serif text-[#D4AF37] font-bold">24 / 7</div>
+      <div class="text-xs text-amber-200/60 uppercase tracking-wider mt-1">Круглосуточно</div>
+    </div>
+    <div>
+      <div class="text-2xl sm:text-3xl font-serif text-[#D4AF37] font-bold">100%</div>
+      <div class="text-xs text-amber-200/60 uppercase tracking-wider mt-1">Конфиденциально</div>
+    </div>
+    <div>
+      <div class="text-2xl sm:text-3xl font-serif text-[#D4AF37] font-bold">3 Этапа</div>
+      <div class="text-xs text-amber-200/60 uppercase tracking-wider mt-1">Очистки воды</div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="text-[#D4AF37] text-xs uppercase tracking-[0.3em] font-semibold mb-3">Коллекция Отдыха</div>
+    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-amber-100">Королевские Номера и Бани</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-4"></div>
+  </div>
+
+  <!-- Tabs Nav -->
+  <div id="room-tabs" class="flex items-center justify-start lg:justify-center overflow-x-auto gap-2 pb-4 mb-10 no-scrollbar">
+    <!-- JS Dynamic Buttons -->
+  </div>
+
+  <!-- Room Display Card -->
+  <div id="room-display" class="bg-[#1A1613] rounded-3xl border border-[#D4AF37]/20 overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 transition-all">
+    <!-- JS Dynamic Content -->
+  </div>
+
+</div>
+
+
+  <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="text-[#D4AF37] text-xs uppercase tracking-[0.3em] font-semibold mb-3">Совершенство тела и духа</div>
+    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-amber-100">SPA-Услуги и Авторские Ритуалы</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-4"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="sparkles" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">Массажи и Спа-Уход</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Авторские техники массажа от классического до глубокого расслабляющего и спортивного. Оздоравливающие масляные обертывания.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">от 3 000 руб / 60 мин</div>
+    </div>
+
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="waves" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">Пенно-мыльные Пилинги</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Традиционный турецкий пилинг рукавичкой Кесе на теплом мраморе Хаммама с нанесением питательной натуральной пены.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">от 2 500 руб / процедура</div>
+    </div>
+
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="coffee" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">Элитная Чайная Церемония</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Коллекционный китайский чай, травяные альпийские сборы, натуральный горный мед, сухофрукты и восточные сладости.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">от 1 500 руб / сет</div>
+    </div>
+
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="crown" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">Русский Бильярд & Караоке</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Профессиональные суконные столы для бильярда и современные звуковые караоке-системы с огромным каталогом треков.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">Включено / по запросу</div>
+    </div>
+
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="wine" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">Ресторан & Авторская Кухня</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Изысканное меню от шеф-повара: блюда европейской и кавказской кухни, морепродукты, гриль и карта премиальных напитков.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">Круглосуточно по меню</div>
+    </div>
+
+    <div class="bg-[#1A1613] p-8 rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all hover:-translate-y-1 group">
+      <div class="w-12 h-12 rounded-xl bg-[#2B231D] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-6 group-hover:bg-[#D4AF37] group-hover:text-black transition-colors">
+        <i data-lucide="shield-check" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-xl font-serif font-bold text-amber-100 mb-3">VIP Приватность</h3>
+      <p class="text-xs text-amber-100/70 leading-relaxed mb-6 font-light">
+        Отдельные парковочные места, закрытые индивидуальные входы и полная бескомпромиссная конфиденциальность гостей.
+      </p>
+      <div class="text-sm text-[#D4AF37] font-semibold">100% Гарантия</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <div class="text-[#D4AF37] text-xs uppercase tracking-[0.3em] font-semibold mb-3">Визуальный Тур</div>
+    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-amber-100">Атмосфера Нашего Клуба</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-4"></div>
+  </div>
+
+  <div id="gallery-filters" class="flex items-center justify-center gap-2 flex-wrap mb-10">
+    <!-- Dynamic Filter Buttons -->
+  </div>
+
+  <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Dynamic Gallery Items -->
+  </div>
+
+</div>
+
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    
+    <!-- Info Column -->
+    <div class="lg:col-span-5 flex flex-col justify-between">
+      <div>
+        <div class="text-[#D4AF37] text-xs uppercase tracking-[0.3em] font-semibold mb-3">Контакты & Бронь</div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-amber-100 mb-6">Ждем Вас в Гости</h2>
+        <p class="text-amber-100/70 text-sm leading-relaxed mb-8 font-light">
+          Оздоровительный спа-клуб «САХАРА» работает круглосуточно, 7 дней в неделю. Мы находимся в Нижнем Новгороде.
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#1A1613] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-amber-200/60 uppercase">Адрес</div>
+              <div class="text-amber-100 text-sm font-medium mt-0.5">г. Нижний Новгород, Нижегородский район</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#1A1613] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-amber-200/60 uppercase">Телефон для бронирования</div>
+              <a href="tel:+78312501494" class="text-[#D4AF37] hover:text-[#E5C158] text-lg font-serif font-bold mt-0.5 block">
+                +7 (831) 250-14-94
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#1A1613] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-amber-200/60 uppercase">Режим работы</div>
+              <div class="text-amber-100 text-sm font-medium mt-0.5">Круглосуточно (24 часа / 7 дней в неделю)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mt-8">
+          <button onclick="openYandexRoute()" class="px-5 py-3 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#AA7C11] text-black font-bold text-xs flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-[#D4AF37]/20">
+            <i data-lucide="navigation" class="w-4 h-4"></i> Проложить маршрут
+          </button>
+          <a href="#" class="px-4 py-3 rounded-xl bg-[#1E1915] border border-[#D4AF37]/30 text-amber-200 text-xs font-medium flex items-center gap-2 hover:border-[#D4AF37] transition-all">
+            <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i> WhatsApp
+          </a>
+          <a href="#" class="px-4 py-3 rounded-xl bg-[#1E1915] border border-[#D4AF37]/30 text-amber-200 text-xs font-medium flex items-center gap-2 hover:border-[#D4AF37] transition-all">
+            <i data-lucide="send" class="w-4 h-4 text-sky-400"></i> Telegram
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Interactive Map Wrapper -->
+    <div class="lg:col-span-7 bg-[#1A1613] rounded-3xl border border-[#D4AF37]/30 p-2 min-h-[420px] flex flex-col justify-between relative overflow-hidden shadow-2xl">
+      
+      <div class="absolute top-4 left-4 right-4 z-20 bg-[#120F0D]/90 backdrop-blur-md p-3.5 rounded-2xl border border-[#D4AF37]/30 flex items-center justify-between pointer-events-auto">
+        <div class="flex items-center gap-2.5">
+          <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
+          <div>
+            <div class="text-xs font-bold text-amber-100">Интерактивная карта Yandex</div>
+            <div class="text-[10px] text-amber-200/60">Нижний Новгород — САХАРА SPA</div>
+          </div>
+        </div>
+        
+        <button onclick="openYandexRoute()" class="px-3 py-1.5 rounded-lg bg-[#2B231D] hover:bg-[#382E27] text-[#D4AF37] border border-[#D4AF37]/40 text-[11px] font-medium transition-all flex items-center gap-1.5">
+          <i data-lucide="compass" class="w-3.5 h-3.5"></i> Навигатор
+        </button>
+      </div>
+
+      <!-- Target Div for Yandex Map -->
+      <div id="yandex-map-container" class="w-full h-full min-h-[420px] rounded-2xl overflow-hidden relative bg-[#120F0D]"></div>
+
+      <div class="p-2 text-[10px] text-center text-amber-200/40">
+        Оздоровительный комплекс САХАРА — Закрытая бесплатная парковка для всех гостей
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="p-6 border-b border-[#D4AF37]/20 flex items-center justify-between bg-[#120F0D]">
+    <div class="flex items-center gap-2">
+      <i data-lucide="crown" class="w-5 h-5 text-[#D4AF37]"></i>
+      <h3 class="text-xl font-serif font-bold text-amber-100">Онлайн-Расчет и Бронирование</h3>
+    </div>
+    <button onclick="closeBookingModal()" class="text-amber-200/60 hover:text-amber-100 p-1">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <div class="p-6 overflow-y-auto flex-1">
+    <form id="booking-form" class="space-y-6">
+      
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Выберите Номер / Сауну</label>
+        <select id="booking-room-select" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+          <!-- Dynamic Options -->
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Дата</label>
+          <input type="date" id="booking-date" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Время заезда</label>
+          <input type="time" id="booking-time" value="18:00" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Кол-во часов</label>
+          <input type="number" id="booking-hours" min="2" max="24" value="3" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Дополнительные SPA-услуги</label>
+        <div id="booking-services-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <!-- Dynamic Services Checkboxes -->
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Ваше Имя</label>
+          <input type="text" required placeholder="Александр" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-amber-200/70 mb-2">Телефон</label>
+          <input type="tel" required placeholder="+7 (999) 000-00-00" class="w-full bg-[#120F0D] border border-[#D4AF37]/30 rounded-xl p-3 text-sm text-amber-100 focus:outline-none focus:border-[#D4AF37]">
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-[#D4AF37]/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <div class="text-[10px] text-amber-200/60 uppercase">Предварительный расчет</div>
+          <div id="booking-total-price" class="text-3xl font-serif font-bold text-[#D4AF37]">0 ₽</div>
+        </div>
+
+        <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#AA7C11] text-black font-bold uppercase tracking-wider text-xs hover:scale-105 transition-all shadow-lg shadow-[#D4AF37]/20">
+          Отправить заявку
+        </button>
+      </div>
+
+    </form>
+
+    <!-- Success Message -->
+    <div id="booking-success" class="hidden text-center py-12 space-y-4">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center mx-auto">
+        <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+      </div>
+      <h4 class="text-2xl font-serif font-bold text-amber-100">Заявка принята!</h4>
+      <p class="text-xs text-amber-200/70 max-w-md mx-auto">
+        Наш администратор свяжется с Вами по указанному номеру телефона в течение 5 минут для подтверждения бронирования.
+      </p>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Hide Scrollbar helper */
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.no-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+/* Yandex Map grayscale & styling adjustments /
+#yandex-map-container [class="ymaps-2-1-"][class*="-ground-pane"] {
+filter: grayscale(100%) invert(90%) contrast(120%);
+}
+
+/* Smooth Transitions */
+html {
+scroll-behavior: smooth;
+}
